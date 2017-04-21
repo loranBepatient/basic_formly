@@ -1,0 +1,23 @@
+{
+  "name": "angular_formly",
+  "authors": [
+    "Laurent Muller <laurent.muller@bepatient.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-formly-templates-bootstrap": "^6.3.2",
+    "bootstrap": "^3.3.7",
+    "api-check": "^7.5.5"
+  }
+}
