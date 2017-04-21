@@ -72,7 +72,7 @@
                     label: 'Insurance Policy', 
                     placeholder: 'Enter your insurance policy number'
                 },
-                hideExpression: '!model.under25 || !model.provinceX',
+                hideExpression: '!model.under25 || !model.province',
                 validators: {
                     driversLicence: function($modelValue, $viewValue, scope){
                         var value = $modelValue ||  $viewValue
