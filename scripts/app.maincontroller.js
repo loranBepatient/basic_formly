@@ -27,6 +27,20 @@
 
             },
             {
+                key: 'gender', 
+                type: 'radio', 
+                templateOptions: {
+                    label: 'genre',
+                    labelProp : 'value',
+                    valueProp: 'id',
+                    options: [
+                        {value: 'guy',  id: 'man' , checked: true},
+                        {value: 'girl', id: 'woman'}
+                    
+                    ]
+                }
+            },
+            {
                 key: 'last_name', 
                 type: 'input', 
                 templateOptions: {
@@ -91,7 +105,6 @@
                 }
             }
         ]
-
 
         function validateDriversLicence(value) {
             return /[A-Za-z]\d{4}[\s|\-]*\d{5}[\s|\-]*\d{5}$/.test(value)
