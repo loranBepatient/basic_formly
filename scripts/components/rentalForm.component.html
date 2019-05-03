@@ -1,0 +1,29 @@
+<div class="container col-md-8 col-md-offset-2">
+  <div class="row col-md-8 col-md-offset-2">
+    <form novalidate>
+      <h1>Rent-a-Car, eh?</h1>
+      <formly-form
+        ng-if="$ctrl.rentalFields.length > 0"
+        model="$ctrl.rental"
+        fields="$ctrl.rentalFields"
+        form="$ctrl.rentalForm"
+      >
+        <button
+          type="submit"
+          class="btn btn-primary"
+          ng-disabled="$ctrl.rentalForm.$invalid"
+        >
+          Submit
+        </button>
+      </formly-form>
+    </form>
+  </div>
+  <hr />
+  <div class="row col-md-8 col-md-offset-2">
+    <h3>Informations</h3>
+    <pre>
+              {{ $ctrl.rental | json: spacing }}
+          </pre
+    >
+  </div>
+</div>
